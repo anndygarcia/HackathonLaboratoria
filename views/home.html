@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
@@ -18,12 +25,21 @@
         <section class="row mt-4">
             <div class="mx-auto" id="mapContainer"></div>
         </section>
+        <section id="form">
+            <h3 class="text-center my-5">Agrega un comentario</h3>
+            <input type="text" id="job" placeholder="Especialidad" class="form-control my-3">
+            <input type="text" id="company" placeholder="Empresa" class="form-control my-3">
+            <input type="number" id="rating" placeholder="Calificacion" class="form-control my-3">
+            <input type="text" id="recommendation" placeholder="Recomiendas este lugar?" class="form-control my-3">
+            <input type="text" id="comment" placeholder="Por que recomiendas (o no)?" class="form-control my-3">
+        </section>
         <section class="row">
-            <section class="col-6">
+            <section class="col-12">
+                <h3 class="text-center my-3">Comentarios</h3>
                 <div class="card"">
                             <div class=" card-body">
                     <h5 class="card-title text-center">EMPRESA</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Usuaria <span class="float-right">fecha</span></h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Especialidad <span class="float-right">fecha</span></h6>
                     <h6 class="card-title">Calificacion</h6>
                     <h6 class="card-title">Recomiendas este lugar?</h6>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
@@ -37,6 +53,7 @@
 
     <script src="../js/keys.js"></script>
     <script src="../js/map.js"></script>
+    <script src="../js/data.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
