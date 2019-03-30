@@ -16,6 +16,8 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
     <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Hackathon</title>
 </head>
@@ -32,21 +34,12 @@
             <input type="number" id="rating" placeholder="Calificacion" class="form-control my-3">
             <input type="text" id="recommendation" placeholder="Recomiendas este lugar?" class="form-control my-3">
             <input type="text" id="comment" placeholder="Por que recomiendas (o no)?" class="form-control my-3">
+            <button id="add-review">Agregar reseña</button>
         </section>
         <section class="row">
             <section class="col-12">
                 <h3 class="text-center my-3">Comentarios</h3>
-                <div class="card"">
-                            <div class=" card-body">
-                    <h5 class="card-title text-center">EMPRESA</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Especialidad <span class="float-right">fecha</span></h6>
-                    <h6 class="card-title">Calificacion</h6>
-                    <h6 class="card-title">Recomiendas este lugar?</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
-                        placeat, fuga minima voluptas iste incidunt cumque voluptatem consectetur quaerat cupiditate
-                        enim quae, pariatur veniam ratione ducimus commodi perspiciatis quis beatae!</p>
-                </div>
-                </div>
+                <section id="reviews"></section>
             </section>
         </section>
     </main>
