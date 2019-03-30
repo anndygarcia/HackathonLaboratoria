@@ -13,6 +13,23 @@ firebase.initializeApp({
 
 const htmlhome = () => {
     document.getElementById('container').innerHTML = `
+    <header class ="header justify-content-end ">
+        <nav class="nav navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <form class="form-inline my-2 my-lg-0 justify-content-end">
+            <button class="btn btn-outline-success my-2 my-sm-0" >Salir</button>
+        </form>
+        </div>
+    </nav>
+    </header>
+    <section>
+    </section>
     <section class="row mt-4">
         <div class="mx-auto" id="mapContainer"></div>
     </section>

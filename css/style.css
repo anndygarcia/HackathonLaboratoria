@@ -2,6 +2,7 @@
 
 body {
     align-items: center;
+    background-image: linear-gradient(to right,  rgb(14, 59, 67),  rgb(30, 97, 109), rgb(14, 59, 67) );
 }
 
 .content {
@@ -12,4 +13,8 @@ body {
     width: 900px;
     height: 575px;
     display: block;
+}
+
+.nav {
+    background-color: #0d6160c0 !important;
 }
