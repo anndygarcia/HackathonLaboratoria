@@ -1,10 +1,4 @@
-/*
-COLORS
-Dark blue #0E3B43
-Medium blue #006261
-Aqua #208A72
-Green #5CB277
-*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 #mapContainer {
     width: 700px;
