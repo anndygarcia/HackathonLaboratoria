@@ -23,12 +23,20 @@ const htmlhome = () => {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
         <form class="form-inline my-2 my-lg-0 justify-content-end">
-            <button class="btn btn-outline-success my-2 my-sm-0" >Salir</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" id="salir" >Salir</button>
         </form>
         </div>
     </nav>
     </header>
     <section>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="nombre de la empresa" aria-label="nombre de la empresa"
+            aria-describedby="button-addon2" id="search-label" />
+        <div class="input-group-append">
+        <button type="button" class="btn btn-outline-secondary" id="clickbtn-search">
+            Buscar
+        </button>
+        </div>
     </section>
     <section class="row mt-4">
         <div class="mx-auto" id="mapContainer"></div>
@@ -181,6 +189,55 @@ const htmlhome = () => {
                 });
         }
     }
+
+    // buscador
+    const clickbtnSearch = document.getElementById('clickbtn-search');
+    const searchLabel = document.getElementById('search-label');
+    
+
+    // const filterEmpresas = (empresas, search) => {
+    //     let resultadoEmpresas = empresas.filter((i) =>
+    //         i.company.toLowerCase().indexOf(search.toLowerCase()) > -1
+    //     );
+    //     return resultadoEmpresas;
+    // };
+
+    
+
+    const search = () => {
+        let empresa = 'Citibanamex' //searchLabel.value;
+        let empresas= db.collection("reviews");
+        var query = empresas.where("company", "==", `${empresa}`);
+        console.log(query);
+
+        // let empresa = searchLabel.value;
+        // if(empresa===''){
+        //     alert('no has escrito ningun nombre');
+        // }else{
+        //     const resultSearch = filterStudents(empresas, empresa);
+        //     console.log(resultSearch);
+        //     if (resultSearch.length>0) {
+        //         // listaResult.innerHTML='';
+        //         // drawTable(resultSearch);
+        //     } else {
+        //         alert('No existe registro');
+        //     };
+        // }
+    };
+    search();
+    
+    //salir
+    document.getElementById('salir').addEventListener('click',
+    (e)=>{
+        firebase.auth().signOut().then(function() {
+        // Sign-out successful.
+        location.href = '/HackathonLaboratoria/index.html';
+        
+        }).catch(function(error) {
+        // An error happened.
+        });
+    })
+
     /*ANDY CODIGO*/
 }
 
@@ -213,6 +270,7 @@ const observador = () => {
 
 
 // logout
+
 // firebase.auth().signOut().then(function() {
 //     // Sign-out successful.
 //   }).catch(function(error) {
