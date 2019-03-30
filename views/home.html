@@ -27,21 +27,47 @@
         <section class="row mt-4">
             <div class="mx-auto" id="mapContainer"></div>
         </section>
-        <section id="form">
-            <h3 class="text-center my-5">Agrega un comentario</h3>
-            <input type="text" id="job" placeholder="Especialidad" class="form-control my-3">
-            <input type="text" id="company" placeholder="Empresa" class="form-control my-3">
-            <input type="number" id="rating" placeholder="Calificacion" class="form-control my-3">
-            <input type="text" id="recommendation" placeholder="Recomiendas este lugar?" class="form-control my-3">
-            <input type="text" id="comment" placeholder="Por que recomiendas (o no)?" class="form-control my-3">
-            <button id="add-review">Agregar reseña</button>
-        </section>
-        <section class="row">
-            <section class="col-12">
-                <h3 class="text-center my-3">Comentarios</h3>
-                <section id="reviews"></section>
+        <div class="content">
+            <section class="row">
+                <section class="col-12">
+                    <h3 class="text-center my-3">Comentarios</h3>
+                    <section id="reviews"></section>
+                </section>
             </section>
-        </section>
+            <section class="my-3" id="form">
+                <h3 class="text-center my-5">Agrega un comentario</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Especialidad</label>
+                        <input type="email" class="form-control" id="job"
+                            placeholder="Front End Developer o UX Designer">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Empresa a evaluar</label>
+                        <input type="text" class="form-control" id="company" placeholder="Nombre de la empresa">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Calificación</label>
+                        <input type="text" class="form-control" id="rating"
+                            placeholder="Dale una puntuación del 1 al 5.">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">¿Recomiendas esta empresa?</label>
+                        <input type="text" class="form-control" id="recommendation" placeholder="Sí o No">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">¿Por qué?</label>
+                        <input type="text" class="form-control" id="comment" placeholder="Comentarios de esta empresa">
+                        <small id="emailHelp" class="form-text text-muted">Recuerda hablar de situaciones en concreto,
+                            cómo
+                            les diste solución, los agentes involucrados, ser totalmente objetiva, y trata de no
+                            involucrar
+                            sentimientos.</small>
+                    </div>
+                    <button id="add-review">Agregar reseña</button>
+                </form>
+            </section>
+        </div>
     </main>
 
     <script src="../js/keys.js"></script>
