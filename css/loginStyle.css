@@ -2,49 +2,36 @@
 Medium blue #006261
 Aqua #208A72
 Green #5CB277
-  background: url('https://i.pinimg.com/originals/49/71/dd/4971dda4b76787ecefccbf8758fc8443.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
 */
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  background: url('../assets/fondoLogin.png');
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  -moz-background-size: cover !important;
-  -webkit-background-size: cover !important;
-  -o-background-size: cover !important;
+  background-image: linear-gradient(to right,  rgb(14, 59, 67),  rgb(14, 0, 67) );
+
 }
 
 .login_form {
-  position: absolute !important; 
   top: 100px !important;
-  left: 30% !important;
-  width: 40% !important;
   height: 400px !important;
-  background-color: rgba(245, 245, 245, 0.568);
+  background-color: rgba(245, 245, 245, 0.363);
   border-radius: 15%;
 }
 
 .buttons {
-  /* margin-top: 5%; */
-  /* display: flex !important; */
   justify-content: center !important;
   align-items: center !important;
 }
 
 .inicia_sesion {
-  padding-top: 35px;
   font-family: sans-serif;
 }
 
-/* h1 {
-  font-size: 30px;
-} */
+.NonDisplay {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .NonDisplay {
+    display: block;
+  }
+}
