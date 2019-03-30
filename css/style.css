@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+body {
+    align-items: center;
+}
+
+.content {
+    margin: 0 15%;
+}
+
 #mapContainer {
-    width: 700px;
-    height: 375px;
+    width: 900px;
+    height: 575px;
     display: block;
 }
