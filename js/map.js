@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', () => { // DOMContentLoaded es un evento
+    observador();
+}, false);
+
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function (objPosition) {
         // Dibuja mapa inicial con marcador de posicion

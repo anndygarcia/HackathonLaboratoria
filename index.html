@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Firebase App is always required and must be first -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+
+  <!-- Add additional services that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/loginStyle.css">
@@ -22,13 +28,13 @@
       </div>
       <div class="buttons">
         <div class="row justify-content-center my-3">
-          <button type="button" class="btn btn-outline-info btn-lg col-sm-8 ">
+          <button type="button" class="btn btn-outline-info btn-lg col-sm-8 " id="btn-facebook">
             <img src="./assets/facebook.png" class="facebook" alt="Facebook" width="52">
             Facebook
           </button>
         </div>
         <div class="row justify-content-center my-3">
-          <button type="button" class="btn btn-outline-danger btn-lg col-sm-8">
+          <button type="button" class="btn btn-outline-danger btn-lg col-sm-8" id="btn-google">
             <img src="./assets/google.png" class="google" alt="Google" width="48">
             Google
           </button>
