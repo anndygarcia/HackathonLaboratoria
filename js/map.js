@@ -21,6 +21,6 @@ if (navigator.geolocation) {
             lng: objPosition.coords.longitude
         },
             { icon: icon });
-        map.addObject(marker);
+        map.addObject(marker);        
     })
 }

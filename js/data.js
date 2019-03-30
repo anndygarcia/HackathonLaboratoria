@@ -197,7 +197,7 @@ const observador = () => {
             var uid = user.uid;
             var providerData = user.providerData;
             htmlhome();
-            console.log(user);
+            // console.log(user);
             // nameUser(displayName);
             // ...
         } else {
